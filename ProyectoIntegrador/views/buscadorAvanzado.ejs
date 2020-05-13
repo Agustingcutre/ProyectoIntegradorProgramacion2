@@ -1,0 +1,143 @@
+html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/buscadorAvanzado.css">
+  <script src="js/buscadorAvanzado.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+  <title>Volti
+  </title>
+</head>
+<body>
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="contenedorTitulos">
+      <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="img/logoVolti.png"></a></li>
+          </ul>
+      </div>
+      <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li class="li-line">
+              <a class="li-a" href="home.html">Home</a>
+            </li>
+              <li  class="li-line">
+                  <a class="li-a" href="#">Generos</a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav gen">
+                      </ul>
+                  </div>
+              </li>
+              <li class="li-line">
+                <a class="li-a" href="buscadorAvanzado.html">Buscador Avanzado</a>
+              </li>
+
+
+          <div id="modal-close-default" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body pop-log">
+              <button class="uk-modal-close-default" type="button" uk-close></button>
+              <h2 class="uk-modal-title">Login</h2>
+              <form class="login" name="login" action="home.html" method="get">
+                 <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                       <div class="uk-inline">
+                          <span class="uk-form-icon" uk-icon="icon: user"></span>
+                              <input class="uk-input" type="text" name="user" id="user" placeholder="Nombre de usuario">
+                      </div>
+                   </div>
+                   <div class="uk-margin">
+                     <div class="uk-inline">
+                         <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                              <input class="uk-input" type="email" id="mail" name="mail" placeholder="Email">
+                     </div>
+                  </div>
+                  <button type="submit" href="home.html" class="uk-button uk-button-default">Login</button>
+                </fieldset>
+              </form>
+           </div>
+          </div>
+          <button class="btn-log botonLogin" type="button" uk-toggle="target: #modal-close-default">LOGIN</button>
+          <li class="li-line prefes" style="display: none;">
+              <a class="li-a" href="favs.html">FAVORITOS</a>
+          </li>
+          <li class="li-line lg" style="display: none;">
+              <a class="li-a logout" href="home.html">LOG OUT</a>
+          </li>
+                    </ul>
+      </div>
+      <div class="contenedorBuscador">
+        <form method="get" name="buscar" action="buscador.html" class="buscar">
+              <input class="uk-search-input casillero" name="buscador" type="search" placeholder="Search...">
+              <button><span class="iconoBuscador" uk-search-icon id="btn-buscar"></span></button>
+          </form>
+      </div>
+      </div>
+  </nav>
+<br>
+<section class="containerGeneral">
+  <form action="resultado.html" method="get" id="formularioBusquedaAvanzada">
+    <fieldset id="formularioBusquedaAvanzada2">
+       <section>
+            <p>
+               <label for="nombre">
+               <span> Género que se desea buscar  </span><br>
+               </label>
+               <input class="datos" type="text" id="nombreusuario" name="usuario" required>
+            </p>
+            <p>
+               <label for="email">
+               <span> Género que se desea excluir  </span><br>
+               </label>
+               <input class="datos" type="email" id="email" name="email">
+           </p>
+           <p>
+              <label for="email">
+              <span> Orden de los resultados   </span><br>
+              </label>
+              <input class="datos" type="email" id="email" name="email">
+          </p>
+          <p>
+             <label for="email">
+             <span> Año de estreno.  </span><br>
+             </label>
+             <input class="datos" type="email" id="email" name="email">
+         </p>
+         <br>
+      </section>
+      <section>
+              <p>
+              <button type="submit" id="botonBusquedaAvanzada">Enviar</button>
+              </p>
+      </section>
+    </fieldset>
+  </form>
+</section>
+<br>
+
+      <section>
+          <section id="section-a">
+
+              <div class="footer">
+                  <footer>
+                    <div class="containerapellidos">
+                      <p class="apellidos">Manuel Eduardo Firpo  &nbsp;|&nbsp; Tomas Lopez Saavedra  &nbsp;|&nbsp; Agustin Cutre</p>
+                    </div>
+                      <div class="subfooter">
+                          <a href="mailto:info@volti.com">info@volti.com</a>
+                       <div class="loguitos">
+                      <img src="img/logoVolti.png" alt="100" width="100">
+                      &nbsp;&nbsp;
+                      <img class="loguito" src="img/logo tmbd.png" alt="50" width="50">
+
+                    </div>
+                    </div>
+                  </footer>
+            </section>
+      </section>
+
+
+</body>
+</html>
