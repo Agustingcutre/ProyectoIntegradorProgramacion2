@@ -1,9 +1,9 @@
-html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-       <link rel="stylesheet" href="../public/stylesheets/index.css">
+       <link rel="stylesheet" href="/stylesheets/index.css" type="text/css">
        <script src="js/home.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
@@ -21,7 +21,7 @@ html lang="en">
       <div class="uk-navbar-center">
           <ul class="uk-navbar-nav">
             <li class="li-line">
-              <a class="li-a" href="/views/index.ejs">Home</a>
+              <a class="li-a" href="/">Home</a>
             </li>
             <li  class="li-line">
               <a class="li-a" href="#">Generos</a>
@@ -30,7 +30,7 @@ html lang="en">
                  </div>
             </li>
             <li class="li-line">
-              <a class="li-a" href="buscadorAvanzado.html">Buscador Avanzado</a>
+              <a class="li-a" href="/buscadorAvanzado">Buscador Avanzado</a>
             </li>
 
         <div id="modal-close-default" uk-modal>
@@ -58,10 +58,10 @@ html lang="en">
         </div>
           <button class="btn-log botonLogin" type="button" uk-toggle="target: #modal-close-default">LOGIN </button>
           <li class="li-line prefes" style="display: none;">
-              <a class="li-a" href="favs.html">FAVORITOS</a>
+              <a class="li-a" href="favoritos.ejs">FAVORITOS</a>
           </li>
           <li class="li-line lg" style="display: none;">
-              <a class="li-a logout" href="home.html">LOG OUT</a>
+              <a class="li-a logout" href="/views/index.ejs">LOG OUT</a>
           </li>
         </ul>
       </div>

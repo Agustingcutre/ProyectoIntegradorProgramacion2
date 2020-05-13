@@ -1,7 +1,4 @@
 const controlador = {
-    home : function(req,res) {
-        res.render("index")
-    },
 
     generos : function (req,res) {
         res.render('generos')
@@ -11,7 +8,7 @@ const controlador = {
     },
     buscadorAvanzado : function (req,res) {
         res.render('buscadorAvanzado')
-    }
+    },
 }
 
 module.exports = controlador;

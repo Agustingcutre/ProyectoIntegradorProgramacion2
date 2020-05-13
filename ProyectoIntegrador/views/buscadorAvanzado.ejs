@@ -1,9 +1,9 @@
-html lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/buscadorAvanzado.css">
+  <link rel="stylesheet" href="/stylesheets/BuscadorAvanzado.css">
   <script src="js/buscadorAvanzado.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
@@ -16,13 +16,13 @@ html lang="en">
     <div class="contenedorTitulos">
       <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="img/logoVolti.png"></a></li>
+              <li class="uk-active"><a href="/"><img class="nav-logo" src="img/logoVolti.png"></a></li>
           </ul>
       </div>
       <div class="uk-navbar-center">
           <ul class="uk-navbar-nav">
             <li class="li-line">
-              <a class="li-a" href="home.html">Home</a>
+              <a class="li-a" href="/">Home</a>
             </li>
               <li  class="li-line">
                   <a class="li-a" href="#">Generos</a>
@@ -69,7 +69,7 @@ html lang="en">
                     </ul>
       </div>
       <div class="contenedorBuscador">
-        <form method="get" name="buscar" action="buscador.html" class="buscar">
+        <form method="get" name="buscar" action="buscador.html" class="buscar" id="buscar2">
               <input class="uk-search-input casillero" name="buscador" type="search" placeholder="Search...">
               <button><span class="iconoBuscador" uk-search-icon id="btn-buscar"></span></button>
           </form>
@@ -77,44 +77,60 @@ html lang="en">
       </div>
   </nav>
 <br>
-<section class="containerGeneral">
-  <form action="resultado.html" method="get" id="formularioBusquedaAvanzada">
-    <fieldset id="formularioBusquedaAvanzada2">
-       <section>
-            <p>
-               <label for="nombre">
-               <span> Género que se desea buscar  </span><br>
-               </label>
-               <input class="datos" type="text" id="nombreusuario" name="usuario" required>
-            </p>
-            <p>
-               <label for="email">
-               <span> Género que se desea excluir  </span><br>
-               </label>
-               <input class="datos" type="email" id="email" name="email">
-           </p>
-           <p>
-              <label for="email">
-              <span> Orden de los resultados   </span><br>
-              </label>
-              <input class="datos" type="email" id="email" name="email">
-          </p>
-          <p>
-             <label for="email">
-             <span> Año de estreno.  </span><br>
-             </label>
-             <input class="datos" type="email" id="email" name="email">
-         </p>
-         <br>
-      </section>
-      <section>
-              <p>
-              <button type="submit" id="botonBusquedaAvanzada">Enviar</button>
-              </p>
-      </section>
-    </fieldset>
-  </form>
-</section>
+
+
+
+
+
+<div class="container marketing">
+
+
+     <form class="form-inline mt-2 mt-md-0 formCentral formularioAvanzado" method="post" action="resultado-busqueda.html" id="formularioAvanzado">
+    <i class="fas fa-search" aria-hidden="true"></i>
+
+    <div class="form_div">
+    <label for="">Selecciona genéro</label><br>
+    <select name="generosDeseados" id="generosDeseados">
+    </select>
+    </div>
+
+    <div class="form_div">
+      <label for="">Excluir genéro</label><br>
+      <select name="generosExcluidos" id="generosExcluidos">
+      </select>
+    </div>
+    <div class="form_div">
+      <label for="">Ordenar por</label><br>
+      <select name="orden" id="orden">
+        <option value="vote_average.asc">Promedio de votos creciente</option>
+        <option value="vote_average.desc">Promedio de votos decreciente</option>
+        <option value="first_air_date.desc">Primero lanzado decreciente</option>
+        <option value="first_air_date.asc">Primero lanzado creceiente</option>
+        <option value="popularity.asc">Popularidad creceiente</option>
+        <option value="popularity.desc">Popularidad decreceiente</option>
+      </select>
+    </div>
+
+    <div class="form_div">
+      <label for="">Año</label><br>
+      <input type="text" placeholder="Ingrese el año" name="anio" id="anio">
+    </div>
+
+    <button class="btn btn-outline-success my-2 my-sm-0 buscar"  type="submit">Buscar</button>
+</form>
+
+    <div class="alert alert-danger" role="alert" hidden id="mensaje">
+      No se han encontrado resultados para tu búsqueda
+    </div>
+
+
+    <h1 hidden id="tituloResultado">Resultados de búsqueda avanzada: <i class="palabraName"></i></h1>
+    <ul class="resultadosBusqueda">
+
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
 <br>
 
       <section>
@@ -141,3 +157,4 @@ html lang="en">
 
 </body>
 </html>
+
