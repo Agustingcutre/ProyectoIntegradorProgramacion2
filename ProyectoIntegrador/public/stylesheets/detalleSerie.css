@@ -72,9 +72,31 @@
     font-size:17px;
     color: rgba(133, 11, 11, 0.863);
     line-height: 1.6;
-     background-image:url("../img/colorFondo.png");
+       background-image:url("../img/colorFondo.png");
   }
   
+  /* aca van los estilos de los detalles de las peliculas */
+  
+  .mov-vid{
+    margin: 2px 5px;
+    box-sizing: border-box ;
+    Flex-wrap: wrap;
+    Justify-content: space-between;
+  }
+  
+  
+  .movie{
+    margin-top:8vh;
+    display: flex;
+    justify-content: center;
+  }
+  .img-peli{
+    margin-left: 10px;
+  }
+  .txt{
+    margin-left: 4vh;
+    width: 60%;
+  }
   
   .prox{
     font-size: 32px;
@@ -82,26 +104,34 @@
     text-align: center;
   }
   
-  .ul-fotos{
-    display: flex;
-    flex-wrap: wrap;
-    list-style:none;
-      justify-content: space-around;
+  /* boton modal */
+  
+  .contenedorBotonRecomendadas{
     position: relative;
-    right: 13px;
+    top: -5vh;
+    left: 80vh;
+    padding: 5vh;
+    align-items: center;
   }
   
-  .li-item{
-    width: 100%;
-    height: 10%;
-    list-style: none;
-    margin-bottom: 10px;
+  .contenedorBotonRecomendadas2{
+    position: relative;
+    top: 0vh;
+    left: 80vh;
+    padding: 5vh;
+    align-items: center;
   }
   
-  .img-li{
-    margin-bottom: 15px;
+  /* boton agregar a favoritos */
+  .favorito{
+    border: 0px solid;
+    width: 180px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
   }
-  
   
   /* Footer */
   
@@ -147,4 +177,3 @@
   a:hover {
     color: black;
   }
-  

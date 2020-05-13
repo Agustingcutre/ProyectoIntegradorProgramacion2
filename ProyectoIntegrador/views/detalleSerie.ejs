@@ -1,10 +1,10 @@
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/stylesheets/favoritos.css">
-  <script src="js/favs.js"></script>
+  <link rel="stylesheet" href="/stylesheets/detalleSerie.css">
+  <script src="../public/javascripts/detalleSerie.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
@@ -16,13 +16,13 @@
     <div class="contenedorTitulos">
       <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="index.ejs"><img class="nav-logo" src="img/logoVolti.png"></a></li>
+              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="img/logoVolti.png"></a></li>
           </ul>
       </div>
       <div class="uk-navbar-center">
           <ul class="uk-navbar-nav">
             <li class="li-line">
-              <a class="li-a" href="index.ejs">Home</a>
+              <a class="li-a" href="home.html">Home</a>
             </li>
               <li  class="li-line">
                   <a class="li-a" href="#">Generos</a>
@@ -32,7 +32,7 @@
                   </div>
               </li>
               <li class="li-line">
-                <a class="li-a" href="buscadorAvanzado.ejs">Buscador Avanzado</a>
+                <a class="li-a" href="buscadorAvanzado.html">Buscador Avanzado</a>
               </li>
 
 
@@ -66,7 +66,7 @@
           <li class="li-line lg" style="display: none;">
               <a class="li-a logout" href="home.html">LOG OUT</a>
           </li>
-                    </ul>
+        </ul>
       </div>
       <div class="contenedorBuscador">
         <form method="get" name="buscar" action="buscador.html" class="buscar">
@@ -77,20 +77,69 @@
       </div>
   </nav>
 
-  <div id="main">
-    <div class="">
-      <p class="prox"></p>
-    </div>
-  <div class="fotoswrap">
-    <ul class="ul-fotos">
+  <section class="movie">
+       <div class="img-peli">
+       </div>
+       <div class="txt">
+                <p ><span class="tit"></span></p>
+                <p ><span class="genero"></span></p>
+                <p ><span class="lng"></span></p>
+                <p ><span class="fchestreno"></span></p>
+                <p ><span class="sinopsis"></span></p>
+       </div>
+       <div class="addfav">
+       </div>
+  </section>
 
-    </ul>
+  <!-- This is a button toggling the modal -->
+  <section class="contenedorBotonRecomendadas2">
+  <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example"> VER TRAILER </button>
+
+  <!-- This is the modal -->
+  <div id="modal-example" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+          <div class="">
+              <p class="prox"> Trailers </p>
+              <div class="mov-vid">
+              </div>
+          </div>
+          <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          </p>
+      </div>
   </div>
+</section>
 
+  <!-- This is a button toggling the modal -->
+  <section class="contenedorBotonRecomendadas">
+  <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example"> VER RECOMENDADAS </button>
+
+  <!-- This is the modal -->
+  <div id="modal-example" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+          <div class="">
+            <div class="">
+              <p class="prox">Relacionadas</p>
+            </div>
+            <div uk-slider>
+              <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                  <ul class="uk-slider-items related uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                  </ul>
+                  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              </div>
+              <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+          </div>
+          <p class="uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+          </p>
+      </div>
+  </div>
+</section>
 
       <section>
           <section id="section-a">
-
               <div class="footer">
                   <footer>
                     <div class="containerapellidos">
@@ -108,7 +157,5 @@
                   </footer>
             </section>
       </section>
-
-
 </body>
 </html>

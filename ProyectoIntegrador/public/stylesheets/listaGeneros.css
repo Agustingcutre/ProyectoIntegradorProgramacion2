@@ -1,0 +1,161 @@
+/* Este asterico abarca absolutamente todo ene sta pagina */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+img.nav-logo{
+  width: 13vh;
+  height: 6vh;
+}
+
+div.contenedorTitulos{
+  background-color:rgba(133, 11, 11, 0.863);
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.li-line:hover{
+  color: white;
+  background-color:rgba(133, 11, 11, 0.6);
+  text-decoration: none;
+}
+.li-a{
+  font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.favLogOut{
+      text-decoration: none;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #333;
+    border-bottom: 1px solid #bbb;
+}
+
+/* boton login */
+.botonLogin{
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 4vh;
+  left: 75vh;
+  cursor: pointer;
+}
+
+/*buscador*/
+
+.contenedorBuscador{
+position: absolute;
+right: 4vh;
+top: 4vh;
+}
+
+.buscar{
+ border-radius: 40px;
+ height: 4vh;
+ justify-content: center;
+ display: flex;
+}
+
+.iconoBuscador{
+ color:white;
+   height: 8vh;
+}
+
+body {
+  margin:0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:17px;
+  color: rgba(133, 11, 11, 0.863);
+  line-height: 1.6;
+}
+
+/*listado pelicuals por genero */
+#main{
+   background-image:url("../img/colorFondo.png");
+}
+
+.prox{
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ul-fotos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style:none;
+  position: relative;
+  right: 13px;
+}
+
+.li-item{
+  width: 100%;
+  height: 10%;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.img-li{
+  margin-bottom: 15px;
+}
+
+.fotoswrap{
+  min-height: 100vh;
+}
+
+/* Footer */
+
+#section-a {
+
+  padding: 20px;
+  background-color:rgba(133, 11, 11, 0.863);
+  text-align: center;
+}
+
+
+ol.containerapellidos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.apellidos {
+  padding-left: 9px;
+  padding-top: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+.subfooter {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loguito {
+  margin-top: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}

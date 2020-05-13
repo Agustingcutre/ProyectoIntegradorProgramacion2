@@ -10,8 +10,12 @@ router.get('/', function(req, res, next) {
 
 
 router.get("/generos", controladores.generos);
-router.get("/favoritos", controladores.favoritos);
+router.get("/favs", controladores.favoritos);
 router.get("/buscadorAvanzado", controladores.buscadorAvanzado);
+router.get("/detalleSerie", controladores.detalleSerie);
+router.get("/buscador", controladores.buscador);
+
+
 
 
 

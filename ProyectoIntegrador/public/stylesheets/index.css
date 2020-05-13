@@ -1,3 +1,5 @@
+/* Este asterico abarca absolutamente todo ene sta pagina */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,61 +7,57 @@
 
 /* Header */
 
-.headervolti {
-  color: white;
-  padding: 5px;
-  margin-left: 20px;
-
+img.nav-logo{
+  width: 13vh;
+  height: 6vh;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
+div.contenedorTitulos{
   background-color:rgba(133, 11, 11, 0.863);
-  position: fixed;
-  width: 100%;
-}
-
-.abarcosecciones {
-  margin-right: 20px;
   display: flex;
-  flex-direction: row;
-  
-  
-}
-
-.secciones {
-  padding: 5px;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  margin-left: 30px;
-  position: relative;
-}
-
-.secciones a::before {
-  content: '';
-  display: block;
-  height: 5px;
   width: 100%;
-  background-color: white;
-  
-  position: absolute;
-  top: 0;
-  width: 0%;
- 
+  text-align: center;
 }
 
-.secciones a:hover::before {
-width: 100%;
-
-}
-
-
-
-
-a {
+.li-line:hover{
+  color: white;
+  background-color:rgba(133, 11, 11, 0.6);
   text-decoration: none;
+}
+.li-a{
+  font-family: sans-serif;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #333;
+    border-bottom: 1px solid #bbb;
+}
+
+/* boton login */
+.botonLogin{
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 4vh;
+  left: 75vh;
+  cursor: pointer;
+}
+ /*buscador*/
+
+.contenedorBuscador{
+position: absolute;
+right: 4vh;
+top: 4vh;
+}
+
+.buscar{
+  border-radius: 40px;
+  height: 4vh;
+  justify-content: center;
+  display: flex;
 }
 
 body {
@@ -68,11 +66,14 @@ body {
   font-size:17px;
   color: rgba(133, 11, 11, 0.863);
   line-height: 1.6;
+     background-image:url("/images/colorFondo.png");
 }
+
+
 
 /* Uso VH UNIT para acomodar imagen */
 #showcase {
-  background-image: url(../img/fondo.jpg); 
+  background-image: url(/images/fondo.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -120,15 +121,15 @@ body {
 #section-b {
   padding: 20px;
   background-color: #f4f4f4;
-  
+
   text-align: center;
-  
+
 }
 
 #section-c {
   display: flex;
   justify-content:  center;
-  
+
 }
 
 #section-c div{
@@ -150,44 +151,43 @@ body {
 }
 
 #section-c .box-1:hover {
- 
+
   color: black;
   cursor: pointer;
 }
 #section-c .box-2:hover {
-   
+
   color: black;
   cursor: pointer;
 }
 #section-c .box-3:hover {
-   
+
   color: black;
   cursor: pointer;
 }
 
 /* Listados */
 
+.sectionsdeseries {
 
+}
 
 .seriespopulares {
   text-align: center;
-  height: 100px;
-border: dashed;
+  padding: 25px;
 margin: 10px 5px;
 }
 
 .seriesconmayorpuntaje {
   text-align: center;
-  height: 100px;
-border: dashed;
+  padding: 25px;
 margin: 10px 5px;
 }
 
 .seriesalairehoy {
   text-align: center;
-  
-  height: 100px;
-border: dashed;
+
+ padding: 25px;
 margin: 10px 5px;
 }
 
@@ -195,57 +195,38 @@ margin: 10px 5px;
 /* Footer */
 
 #section-a {
-  
+
   padding: 20px;
-  background-color: f9f9f9;
-  color:rgba(133, 11, 11, 0.863);
+  background-color:rgba(133, 11, 11, 0.863);
   text-align: center;
-
 }
 
-.footer {
-  
-  background-color: rgba(133, 11, 11, 0.863);
-  
- 
 
-}
-
-.containerapellidos {
+ol.containerapellidos {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  position: relative;
-
+  text-decoration: none;
 }
 
 .apellidos {
   padding-left: 9px;
   padding-top: 4px;
   color: white;
-  
-  
+  text-decoration: none;
 }
-
-
 
 .subfooter {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  
-  
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
 
 .loguito {
   margin-top: 10px;
-  
 }
 
 a {
@@ -254,4 +235,43 @@ a {
 
 a:hover {
   color: black;
+}
+
+
+/* aca va a venir los tamaños para cada pagina segun computadora
+ tablet o telefono */
+
+@media (max-width: 850px) {
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+
+/* MEDIA QUERY PARA TABLET (Ancho máximo 750px) */
+@media (min-width: 451px) and (max-width: 750px){
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+    .uk-navbar-center{
+      width: 100%;
+    }
+}
+
+/* MEDIA QUERY PARA SMARTPHONE (Ancho máximo 450px) */
+@media (min-width: 0px) and (max-width: 450px){
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+
 }
