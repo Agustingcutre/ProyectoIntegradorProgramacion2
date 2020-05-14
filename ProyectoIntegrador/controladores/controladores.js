@@ -1,7 +1,7 @@
 const controlador = {
 
-    generos : function (req,res) {
-        res.render('generos')
+    listaGeneros : function (req,res) {
+        res.render('listaGeneros')
     },
     favoritos : function (req,res) {
         res.render('favs')

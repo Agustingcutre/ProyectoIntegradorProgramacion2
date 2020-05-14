@@ -26,7 +26,7 @@ window.onload = function() {
         for (var i = 0; i < arraySeries.length; i++) {
           var png = arraySeries[i].poster_path;
           var id = arraySeries[i].id
-          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
         }
       })
       .catch(function(error) {
@@ -45,7 +45,7 @@ window.onload = function() {
           for (var i = 0; i < 8; i++) {
             var id = arrayDeMovies[i].id
             var png = arrayDeMovies[i].poster_path
-            document.querySelector("ul.uk-slider-items").innerHTML += "<li class="+"uk-transition-toggle"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img src=" + "https://image.tmdb.org/t/p/w500" +png+"></a><div class="+"uk-position-center uk-panel"+"><h1 class=" + "uk-transition-slide-bottom-small"+">1</h1></div></li>"
+            document.querySelector("ul.uk-slider-items").innerHTML += "<li class="+"uk-transition-toggle"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img src=" + "https://image.tmdb.org/t/p/w500" +png+"></a><div class="+"uk-position-center uk-panel"+"><h1 class=" + "uk-transition-slide-bottom-small"+">1</h1></div></li>"
           }
     
         })
@@ -70,7 +70,7 @@ window.onload = function() {
                 var png = arraySeries[i].poster_path;
                 var id = arraySeries[i].id
     //mediante esto traigo las imagenes para las peliculas
-                document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+                document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
                 cont++;
     
               }
@@ -98,7 +98,7 @@ window.onload = function() {
           var li;
     //estructura que va a linkear donde posicionarlos
           li = '<li>'
-          li += '<a href=listaGeneros.html?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
+          li += '<a href=/listaGeneros?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
           li += '</li>'
     //estilo selector para los genros
           document.querySelector("ul.gen").innerHTML += li

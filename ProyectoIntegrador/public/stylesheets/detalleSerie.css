@@ -72,7 +72,7 @@
     font-size:17px;
     color: rgba(133, 11, 11, 0.863);
     line-height: 1.6;
-       background-image:url("../img/colorFondo.png");
+       background-image:url("/images/colorFondo.png");
   }
   
   /* aca van los estilos de los detalles de las peliculas */

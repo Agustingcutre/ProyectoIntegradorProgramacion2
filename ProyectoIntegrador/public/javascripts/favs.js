@@ -34,7 +34,7 @@ window.onload = function() {
           var desc = peliDetalle.overview
           var id = peliDetalle.id
   
-          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
         })
     }
     //ESTO ES Generos
@@ -50,7 +50,7 @@ window.onload = function() {
           var id = arrayGeneros[i].id
           var li;
           li = '<li>'
-          li += '<a href=listaGeneros.html?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
+          li += '<a href=/listaGeneros?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
           li += '</li>'
   
           document.querySelector("ul.gen").innerHTML += li

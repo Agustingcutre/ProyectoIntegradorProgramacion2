@@ -28,7 +28,7 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=e31dd59fefbc10e65215ec
       var id = arrayGeneros[i].id
       var li;
       li = '<li>'
-      li += '<a href=listaGeneros.html?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
+      li += '<a href=/listaGeneros?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
       li += '</li>'
 //estructura que va a linkear donde posicionarlos
       document.querySelector("ul.gen").innerHTML += li
@@ -135,7 +135,7 @@ var destino = document.querySelector(".resultadosBusqueda");
              for(var i=0; i<datosFinales.length; i++){
                div += "<div class='col-lg-4'>";
                div += "<img style='width:100%' src='https://image.tmdb.org/t/p/original/"+datosFinales[i].poster_path+"'>";
-               div += "<p><a class='btn btn-secondary' href='detalleSerie.html?idSerie="+datosFinales[i].id+"' role='button'>GO</a></p>";
+               div += "<p><a class='btn btn-secondary' href='/detalleSerie?idSerie="+datosFinales[i].id+"' role='button'>GO</a></p>";
                div += "</div>";
              }
              destino.innerHTML = div

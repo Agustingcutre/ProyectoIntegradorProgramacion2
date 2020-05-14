@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 
 
-router.get("/generos", controladores.generos);
+router.get("/listaGeneros", controladores.listaGeneros);
 router.get("/favs", controladores.favoritos);
 router.get("/buscadorAvanzado", controladores.buscadorAvanzado);
 router.get("/detalleSerie", controladores.detalleSerie);

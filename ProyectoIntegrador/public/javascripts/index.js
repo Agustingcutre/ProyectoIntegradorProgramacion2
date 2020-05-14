@@ -16,7 +16,7 @@ window.onload = function() {
          shows.forEach(function(show) {
    
              const li = document.createElement("a");
-             li.href = `detalleSerie.html?idPeli=${show.id}`
+             li.href = `/detalleSerie?idPeli=${show.id}`
    
              const panel = document.createElement("div");
              panel.classList.add("uk-panel");
@@ -61,7 +61,7 @@ window.onload = function() {
          shows.forEach(function(show) {
    
              const li = document.createElement("a");
-             li.href = `detalleSerie.html?idPeli=${show.id}`
+             li.href = `/detalleSerie?idPeli=${show.id}`
    
              const panel = document.createElement("div");
              panel.classList.add("uk-panel");
@@ -105,7 +105,7 @@ window.onload = function() {
          shows.forEach(function(show) {
    
              const li = document.createElement("a");
-             li.href = `detalleSerie.html?idPeli=${show.id}`
+             li.href = `/detalleSerie?idPeli=${show.id}`
    
              const panel = document.createElement("div");
              panel.classList.add("uk-panel");
@@ -151,7 +151,7 @@ window.onload = function() {
            var li;
      //estructura que va a linkear donde posicionarlos
            li = '<li>'
-           li += '<a href=listaGeneros.html?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
+           li += '<a href=/listaGeneros?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
            li += '</li>'
      //estilo selector para los genros
            document.querySelector("ul.gen").innerHTML += li

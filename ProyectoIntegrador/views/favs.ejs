@@ -16,7 +16,7 @@
     <div class="contenedorTitulos">
       <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="index.ejs"><img class="nav-logo" src="/images/logoVolti.png"></a></li>
+              <li class="uk-active"><a href="/"><img class="nav-logo" src="/images/logoVolti.png"></a></li>
           </ul>
       </div>
       <div class="uk-navbar-center">
@@ -40,7 +40,7 @@
             <div class="uk-modal-dialog uk-modal-body pop-log">
               <button class="uk-modal-close-default" type="button" uk-close></button>
               <h2 class="uk-modal-title">Login</h2>
-              <form class="login" name="login" action="home.html" method="get">
+              <form class="login" name="login" action="/" method="get">
                  <fieldset class="uk-fieldset">
                     <div class="uk-margin">
                        <div class="uk-inline">
@@ -54,7 +54,7 @@
                               <input class="uk-input" type="email" id="mail" name="mail" placeholder="Email">
                      </div>
                   </div>
-                  <button type="submit" href="home.html" class="uk-button uk-button-default">Login</button>
+                  <button type="submit" href="/" class="uk-button uk-button-default">Login</button>
                 </fieldset>
               </form>
            </div>
@@ -64,12 +64,12 @@
               <a class="li-a" href="/favs">FAVORITOS</a>
           </li>
           <li class="li-line lg" style="display: none;">
-              <a class="li-a logout" href="home.html">LOG OUT</a>
+              <a class="li-a logout" href="/">LOG OUT</a>
           </li>
                     </ul>
       </div>
       <div class="contenedorBuscador">
-        <form method="get" name="buscar" action="buscador.html" class="buscar">
+        <form method="get" name="buscar" action="/buscador" class="buscar">
               <input class="uk-search-input casillero" name="buscador" type="search" placeholder="Search...">
               <button><span class="iconoBuscador" uk-search-icon id="btn-buscar"></span></button>
           </form>

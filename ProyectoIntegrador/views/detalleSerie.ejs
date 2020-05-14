@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/stylesheets/detalleSerie.css">
-  <script src="../public/javascripts/detalleSerie.js"></script>
+  <script src="/javascripts/detalleSerie.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
@@ -16,13 +16,13 @@
     <div class="contenedorTitulos">
       <div class="uk-navbar-left">
           <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="img/logoVolti.png"></a></li>
+              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="/images/logoVolti.png"></a></li>
           </ul>
       </div>
       <div class="uk-navbar-center">
           <ul class="uk-navbar-nav">
             <li class="li-line">
-              <a class="li-a" href="home.html">Home</a>
+              <a class="li-a" href="/">Home</a>
             </li>
               <li  class="li-line">
                   <a class="li-a" href="#">Generos</a>
@@ -32,7 +32,7 @@
                   </div>
               </li>
               <li class="li-line">
-                <a class="li-a" href="buscadorAvanzado.html">Buscador Avanzado</a>
+                <a class="li-a" href="/buscadorAvanzado">Buscador Avanzado</a>
               </li>
 
 
@@ -61,7 +61,7 @@
           </div>
           <button class="btn-log botonLogin" type="button" uk-toggle="target: #modal-close-default">LOGIN</button>
           <li class="li-line prefes" style="display: none;">
-              <a class="li-a" href="favs.html">FAVORITOS</a>
+              <a class="li-a" href="/favs">FAVORITOS</a>
           </li>
           <li class="li-line lg" style="display: none;">
               <a class="li-a logout" href="home.html">LOG OUT</a>
@@ -69,7 +69,7 @@
         </ul>
       </div>
       <div class="contenedorBuscador">
-        <form method="get" name="buscar" action="buscador.html" class="buscar">
+        <form method="get" name="buscar" action="/buscador" class="buscar">
               <input class="uk-search-input casillero" name="buscador" type="search" placeholder="Search...">
               <button><span class="iconoBuscador" uk-search-icon id="btn-buscar"></span></button>
           </form>
@@ -148,9 +148,9 @@
                       <div class="subfooter">
                           <a href="mailto:info@volti.com">info@volti.com</a>
                        <div class="loguitos">
-                      <img src="img/logoVolti.png" alt="100" width="100">
+                      <img src="/images/logoVolti.png" alt="100" width="100">
                       &nbsp;&nbsp;
-                      <img class="loguito" src="img/logo tmbd.png" alt="50" width="50">
+                      <img class="loguito" src="/images/logo tmbd.png" alt="50" width="50">
 
                     </div>
                     </div>
