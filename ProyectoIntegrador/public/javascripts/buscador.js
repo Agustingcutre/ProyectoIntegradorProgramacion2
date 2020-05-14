@@ -25,7 +25,7 @@ window.onload = function() {
                   for (var i = 0; i < arrayBusqueda.length; i++) {
                     var png = arrayBusqueda[i].poster_path;
                     var id = arrayBusqueda[i].id
-                    document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=peliculas.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+                    document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
                   }
             })
             .catch(function(error) {
@@ -50,7 +50,7 @@ window.onload = function() {
           for (var i = 0; i < arrayBusqueda.length; i++) {
             var png = arrayBusqueda[i].poster_path;
             var id = arrayBusqueda[i].id
-            document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=peliculas.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+            document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
           }
     })
     .catch(function(error) {
@@ -68,7 +68,7 @@ window.onload = function() {
         for (var i = 0; i < 8; i++) {
           var id = arrayDeMovies[i].id
           var png = arrayDeMovies[i].poster_path
-          document.querySelector("ul.uk-slider-items").innerHTML += "<li class="+"uk-transition-toggle"+ "tabindex="+"0"+"><a href=peliculas.html?idPeli=" + id + "><img src=" + "https://image.tmdb.org/t/p/w500" +png+"></a><div class="+"uk-position-center uk-panel"+"><h1 class=" + "uk-transition-slide-bottom-small"+">1</h1></div></li>"
+          document.querySelector("ul.uk-slider-items").innerHTML += "<li class="+"uk-transition-toggle"+ "tabindex="+"0"+"><a href=/detalleSerie?idPeli=" + id + "><img src=" + "https://image.tmdb.org/t/p/w500" +png+"></a><div class="+"uk-position-center uk-panel"+"><h1 class=" + "uk-transition-slide-bottom-small"+">1</h1></div></li>"
         }
   
       })
